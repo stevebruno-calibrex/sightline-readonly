@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sightline Read Only, connecting</title>
+<meta name="robots" content="noindex">
+<style>body{font:16px/1.6 -apple-system,Helvetica,Arial,sans-serif;max-width:40rem;margin:4rem auto;padding:0 1.5rem;color:#14202e}code{background:#f2f5f8;padding:.1rem .3rem}</style></head>
+<body><h1>Connecting to Sightline</h1>
+<p id="msg">Handing the QuickBooks authorization back to Sightline on this machine.</p>
+<script>
+(function(){
+  var q = window.location.search || "";
+  var target = "http://localhost:3000/api/qbo/callback" + q;
+  if (q.indexOf("code=") >= 0) { window.location.replace(target); }
+  else { document.getElementById("msg").textContent = "No authorization code was received. Return to Sightline and try Connect again."; }
+})();
+</script>
+<noscript><p>Open <code>http://localhost:3000/api/qbo/callback</code> with the same query string to finish connecting.</p></noscript>
+</body></html>

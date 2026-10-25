@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy, Sightline Read Only</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0 auto; max-width: 46rem; padding: 3rem 1.5rem 6rem;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         color: #14202e; background: #fff; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2.2rem 0 .5rem; }
+  .meta { color: #5b6b7c; font-size: .9rem; margin: 0 0 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: #0b6bcb; }
+  footer { margin-top: 3rem; border-top: 1px solid #e3e8ee; padding-top: 1rem;
+           color: #5b6b7c; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Sightline Read Only, an internal application of Calibrex Developments. Last updated 24 October 2026.</p>
+
+<h2>Who this covers</h2>
+<p>Sightline Read Only is a private, internal reporting tool built and operated by Calibrex Developments for its own use. It is not offered to the public, not sold, and not available to customers. Its only users are Calibrex principals and staff authorised by Calibrex.</p>
+
+<h2>What data it accesses</h2>
+<p>Sightline Read Only connects to QuickBooks Online company files owned by Calibrex and its affiliated entities. With the account owner's consent it reads, for each connected company:</p>
+<ul>
+  <li>Company name, legal name and fiscal year start</li>
+  <li>Profit and loss, month to date, year to date and trailing twelve months</li>
+  <li>Balance sheet as of the date of the pull</li>
+  <li>Aged receivables and aged payables totals</li>
+  <li>Bank and credit card account balances</li>
+  <li>A list of transactions from the last thirty days</li>
+</ul>
+<p>It does not read payroll records, customer or employee personal information, or payment card data.</p>
+
+<h2>What it never does</h2>
+<ul>
+  <li>It never writes to QuickBooks. The application contains no write path and its automated tests assert that none exists.</li>
+  <li>It never shares, sells, rents or licenses data to any third party.</li>
+  <li>It never uses the data for advertising, profiling or any purpose other than Calibrex's own internal financial reporting.</li>
+  <li>It has no sub-processors and sends no accounting data to any external service.</li>
+</ul>
+
+<h2>Where the data is kept</h2>
+<p>Figures retrieved from QuickBooks are stored on computers owned and controlled by Calibrex Developments in Ontario, Canada. OAuth tokens are held in a file readable only by the operating system account that runs the application, and the application's client secret is held in the macOS login keychain. Nothing is stored in a public cloud database and nothing is committed to source control.</p>
+
+<h2>How long it is kept</h2>
+<p>Each nightly pull replaces the previous copy of the same report. Data is retained only while a company remains connected and is deleted when the connection is revoked.</p>
+
+<h2>Disconnecting</h2>
+<p>The owner of a QuickBooks company may revoke access at any time from within QuickBooks under Apps, or from the Intuit App Store account page. Revoking stops all further access immediately and the stored copy for that company is deleted. A revocation request can also be sent to the contact below.</p>
+
+<h2>Your choices and requests</h2>
+<p>Because the only data involved belongs to Calibrex's own companies, requests for access, correction or deletion are handled directly by Calibrex. Send any request to the contact below and it will be answered.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the revised version will be posted at this address with a new date.</p>
+
+<h2>Contact</h2>
+<p>Steve Bruno, Calibrex Developments, 1135 Stellar Dr., Newmarket, Ontario L3Y 7B8, Canada.<br>
+Email <a href="mailto:bruno@calibrex.ca">bruno@calibrex.ca</a></p>
+
+<footer>Sightline Read Only, Calibrex Developments. Internal use only.</footer>
+
+</body>
+</html>
